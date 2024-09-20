@@ -83,8 +83,95 @@ body {
 .main-content {
     background-color: gainsboro;
     display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
    
 }
+
+.main-content .projects {
+    display: grid;
+    grid-row: 1/span 2;
+    grid-template-rows: 1fr 10fr;
+    padding: 20px;
+    
+}
+
+
+.main-content .projects .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+   
+    
+    gap: 20px;
+    
+}
+
+.main-content .projects .cards div {
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.25fr ;
+   
+    
+}
+
+.main-content .projects .cards div>a {
+    justify-self: flex-end;
+}
+.main-content .projects .cards div>p {
+    align-self: flex-start;
+    color: gray;
+}
+
+.main-content .projects .cards div>.icons {
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    grid-template-rows: 0.2fr ;
+    align-items: flex-start;
+    justify-items: flex-end;
+    padding: 0;
+}
+    
+
+
+.main-content .announcements {
+    display: grid;
+    grid-template-rows: 0.5fr 5fr; 
+    padding: 20px;
+}
+
+.main-content .announcements .announcement-card {
+    display: grid;
+    
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    
+}
+
+.main-content .announcements .announcement-card ul {
+    list-style-type: none;
+    display: grid;
+    align-items: flex-start;
+   
+}
+
+.main-content .trending {
+    display: grid;
+    grid-template-rows: 0.5fr 5fr; 
+   
+    padding: 20px;
+}
+
+.main-content .trending .trending-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+}
+
 .sidebar {
     background-color: rgb(68, 205, 247);
     display: grid;
@@ -151,7 +238,7 @@ body {
 
 
 body img {
-    width: 40px;
+    width: 30px;
     height: auto;
 
 }
